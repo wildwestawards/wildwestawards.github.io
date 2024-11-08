@@ -1,0 +1,212 @@
+
+/* --- SCROLLING TEXT START --- */
+.scroll-left {
+	height: 50px;	
+	overflow: hidden;
+	position: sticky;
+	background: red;
+	color: orange;
+	border: 1px solid black;
+	margin-bottom: 1vh;
+	top: 1vh;
+	z-index: 998;
+}
+.scroll-left h2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	/* Starting position */
+	transform:translateX(100%);
+	/* Apply animation to this element */
+	animation: scroll-left 15s linear infinite;
+}
+@keyframes scroll-left {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+/* --- SCROLLING TEXT END --- */
+
+body {
+	/* background-color: #ffcc00; */
+	background-image: url("media/lowresgold.jpg");
+}
+a:visited{
+	color: white;
+}
+@keyframes logo {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.logo-anim {
+	max-width: 75%;
+	max-height: 75%;
+	animation-name: logo;
+	animation-duration: 3s;
+	z-index: 1;
+}
+
+.image {
+	max-width: 100%;
+	max-height: 100%;
+	z-index: 1;
+}
+
+.inner-box {
+	font-family: 'Consolas';
+	text-align: center;
+	border-style: solid;
+	border-color: red;
+	background: rgb(0, 0, 0, 0.825);
+	margin-left: 10vw;
+	margin-right: 10vw;
+	padding: 2.5vh;
+}
+
+.inner-box p, h1, h2, h3 {
+	color: white;
+}
+
+.totono-yeehaw {
+	margin-top: 50vh;
+	margin-left: 3vw;
+	position: absolute;
+	z-index: 2;
+	height: 25%;
+	width: 17.5%;
+	rotate: -20deg;
+}
+
+.big-hat {
+	margin-top: 5vh;
+	margin-left: 77.5vw;
+	position: absolute;
+	z-index: 2;
+	height: 30%;
+	width: 17.5%;
+	rotate: 20deg;	
+}
+
+.rotating-trophy {
+	margin-top: 5vh;
+	margin-left: 3vw;
+	position: absolute;
+	z-index: 2;
+	height: 25%;
+	width: 17.5%;
+	rotate: -20deg;
+}
+
+.money-rain {
+	margin-top: 50vh;
+	margin-left: 77.5vw;
+	position: absolute;
+	z-index: 3;
+	height: 30%;
+	width: 17.5%;
+	rotate: 20deg;
+}
+
+.lies {
+	margin-top: 60vh;
+	margin-left: 65vw;
+	position: absolute;
+	z-index: 3;
+	height: 17.5%;
+	width: 12.5%;
+}
+
+.dollar {
+	margin-top: 55vh;
+	margin-left: 77.5vw;
+	position: absolute;
+	z-index: 2;
+	height: 20%;
+	width: 17.5%;
+	rotate: 20deg;
+}
+
+.markiplier {
+	height: 100px;
+	position: fixed;
+	background: red;
+	color: orange;
+	border: 1px solid black;
+	margin-bottom: 1vh;
+	top: 1vh;
+	z-index: 999;
+}
+
+.dog {
+	margin-top: 150vh;
+	margin-left: 88vw;
+	position: absolute;
+	z-index: 2;
+	height: 20%;
+	width: 10%;
+}
+
+.wave {
+	margin-top: 150vh;
+	margin-left: 5vw;
+	position: absolute;
+	z-index: 2;
+	height: 4%;
+	width: 2%;
+}
+
+.wildWest {
+	margin-top: 200vh;
+	margin-left: 2vw;
+	position: absolute;
+	z-index: 2;
+	height: 20%;
+	width: 10%;
+}
+
+.usersOnline {
+	width: 7.5vw;
+	position: fixed;
+	background: red;
+	color: orange;
+	border: 1px solid black;
+	margin-top: 1vh;
+	bottom: 0;
+	right: 0;
+	z-index: 998;
+}
+
+.flaming {
+	margin-top: 120vh;
+	margin-left: 88vw;
+	position: absolute;
+	z-index: 2;
+	height: 20%;
+	width: 10%;
+}
+
+.sparkly {
+	margin-top: 175vh;
+	margin-left: 1vw;
+	position: absolute;
+	z-index: 2;
+	height: 20%;
+	width: 10%;
+}
+
+.spamton {
+	position: relative;
+	height: 35%;
+	width: 25%;
+}
