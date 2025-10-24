@@ -35,18 +35,17 @@
 
 body {
 	/* background-color: #ffcc00; */
-	background-image: url("media/lowresgold.jpg");
+	background-image: url("media/bg-new.png");
+	animation: slideleft 600s infinite linear;
 }
+
 a:visited{
-	color: white;
+	color: #0000FF;
 }
-@keyframes logo {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+
+@keyframes slideleft {
+  from { background-position: 0%; }
+  to { background-position: 1500% -1500%; }
 }
 
 .logo-anim {
@@ -67,10 +66,13 @@ a:visited{
 	font-family: 'Consolas';
 	text-align: center;
 	border-style: solid;
-	border-color: red;
-	background: rgb(0, 0, 0, 0.825);
-	margin-left: 10vw;
-	margin-right: 10vw;
+	border-color: #85011e;
+	background: rgb(246, 136, 127, 0.5);
+	border-radius: 0.5%;
+	margin-left: 2.5vw;
+	margin-right: 2.5vw;
+	margin-top: 2.5vh;
+	margin-bottom: 2.5vh;
 	padding: 2.5vh;
 }
 
