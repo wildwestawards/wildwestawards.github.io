@@ -1,0 +1,26 @@
+{
+	"path": "./shimeji/definitions/",
+	"playspace": {
+		"x": 1920,
+		"y": 1080,
+		"units": "px"
+	},
+	"shimejis": [
+		{
+			"id": "demo",
+			"definition_id": "example_pet"
+		},
+		{
+			"id": "demo2",
+			"definition_id": "example_pet"
+		},
+		{
+			"id": "demo3",
+			"definition_id": "example_pet"
+		},
+		{
+			"id": "demo4",
+			"definition_id": "example_pet"
+		}
+	]
+}

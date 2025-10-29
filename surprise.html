@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Howdy~</title>
+	<link rel="stylesheet" href="mystyle.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript">var submitted=false;</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#gform').on('submit', function(e) {
+		  		$('#gform *').fadeOut(2000);
+		  		$('#text *').fadeOut(2000);
+		  		$(".div2").prepend('Your submission has been processed...');
+		  	});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="div0">
+	</div>
+		<!-- Links, left sidebar -->
+		<div class="div1">
+			<a href="index.html">
+			<img class="logo-small" src="media/images/logo3.png"></a>
+			<br>
+			<h2>
+				<a href="about.html" style="text-decoration:none">&bull; About the aWards</a>
+				<br>
+				<br>
+				<a href="vote.html" style="text-decoration:none">&bull; THE VOTE</a>
+				<br>
+				<br>
+				<a href="council.html" style="text-decoration:none">&bull; About THE COUNCIL</a>
+				<br>
+				<br>
+				<a href="surprise.html" style="text-decoration:none">&bull; About ???</a>
+			</h2>
+		</div>
+		<!-- Right content box -->
+		<div class="div2">
+			<!--
+			https://docs.google.com/forms/d/e/1FAIpQLSdbveI_n23NFTotSPJ7Nw1YQHxegxrNjkKpPz8sp_SLpxPPiQ/viewform?
+			entry.495116543=garbageUserName
+			entry.554423996=garbageMail
+			entry.2048208667=garbageMessageText
+			-->
+			<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdbveI_n23NFTotSPJ7Nw1YQHxegxrNjkKpPz8sp_SLpxPPiQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+				<table>
+					<thead>
+					<tr>
+						<th scope="col">
+							<label>Please send me a message, I'd love to hear from you...</label>
+							<br>
+							<br>
+						</th>
+					</tr>
+					<tr>
+						<th scope="col">
+							<label for="uname">What Do We Call You?</label>
+							<br>
+							<input type="text" name="entry.495116543" id="entry.495116543">
+						</th>
+						<th scope="col">
+							<label for="eaddress">Your E-Mail Address Please~</label>
+							<br>
+							<input type="text" name="entry.554423996" id="entry.554423996">
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<th scope="col">
+						<label for="message">Write Me A Message &#128149;</label>
+						<br>
+						<textarea rows="10" cols="40" type="text" name="entry.2048208667" id="entry.2048208667"></textarea>
+						<input type="submit" value="Submit">
+						</tr>	
+					</tbody>
+				</table>
+			</form>
+
+			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+		</div>
+<!-- also helico or cri, get the hell out of here, stop snooping as usual :] -->
+</body>
+</html>
