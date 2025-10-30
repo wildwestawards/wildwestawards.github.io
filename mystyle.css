@@ -12,18 +12,6 @@ a:visited{
   to { background-position: 3000% -6000%; }
 }
 
-#playspace {
-	position: fixed;
-	top: 0;
-	left: 0;
-	margin: auto;
-	width: 1920px;
-	height: 1080px;
-	z-index: -1;
-	border-color: black;
-	border-style: solid;
-}
-
 .div0 {
 	background-image: url("media/images/bg-new.png");
 	background-size: auto;
@@ -34,7 +22,7 @@ a:visited{
 	height: 100%;
 	left: 0;
 	top: 0;
-	z-index: -2;
+	z-index: -1;
 }
 
 .div0black {
@@ -51,16 +39,19 @@ a:visited{
 }
     
 .div1 {
-  font-family: 'Consolas';
-	position: fixed;
-	border-style: solid;
-	border-color: #85011e;
 	background: rgb(246, 136, 127, 0.75);
+	border-color: #85011e;
+	border-style: solid;
 	border-radius: 0.5%;
-	left: 0;
+  font-family: 'Consolas';
 	margin-left: -4px;
 	margin-right: 12px;
+	max-height: 60%;
+	max-width: 20vw;
+	overflow: auto;
+	position: fixed;
 	padding: 8px;
+	left: 0;
 }
 
 .div2 p, h1, h2, h3 {
@@ -73,6 +64,7 @@ a:visited{
 	border-radius: 0.5%;
   font-family: 'Consolas';
 	margin-right: -4px;
+	margin-bottom: 4px;
 	max-height: 100%;
 	max-width: 70vw;
 	overflow: auto;
@@ -85,4 +77,8 @@ a:visited{
 .logo-small {
 	max-width: 16.5vw;
 	max-height: 22.5vh;
+}
+
+#gform input {
+	font-size: 3vh;
 }
